@@ -13,7 +13,7 @@ function App() {
       //everytime a new post is added ,this code is fired
       setPosts(snapshot.docs.map(doc=>({
         id: doc.id,
-        post: doc.data()
+        post: doc.data() 
     })))
   })
   },[])
